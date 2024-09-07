@@ -9,7 +9,7 @@ public class JenkinsSpringbootApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(JenkinsSpringbootApplication.class, args);
 		System.out.println("Hello it is running on jenkins");
-		System.out.println("Automatic build");
+		System.out.println("Automatic build 2");
 	}
 
 }
