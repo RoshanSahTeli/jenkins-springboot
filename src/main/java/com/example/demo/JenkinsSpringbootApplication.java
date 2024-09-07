@@ -10,6 +10,7 @@ public class JenkinsSpringbootApplication {
 		SpringApplication.run(JenkinsSpringbootApplication.class, args);
 		System.out.println("Hello it is running on jenkins");
 		System.out.println("Automatic build 2");
+		System.out.println("Running on docker");
 	}
 
 }
