@@ -26,6 +26,16 @@ pipeline{
                     bat 'docker push roshanteli/devops-integration:latest'
                 }
             }
+            stage('Deploy to docker'){
+            	steps{
+            		script{
+            			bat 'docker pull roshanteli/devops-integration:latest'
+            			bat 'docker stop devops-integration||true'
+            			bat 'docker rm devops-integration || true'
+            			bat 'docker run -d --name devops-integration -p 8082:8080 roshanteli/devops-integrations:latest' 
+            		}
+            	}
+            }
         }
         
     }
